@@ -1,0 +1,141 @@
+.mapupload {
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+
+    background: rgba( 255, 255, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+ 
+}
+
+.mapupload > *, .mapUpdate>*{
+    display: block;
+}
+
+
+.mapupload p, .mapUpdate p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.mapupload p b, .mapUpdate p b{
+    width: 27%;
+    text-align: right;
+}
+
+.mapupload input{
+    padding-left: 10px;
+}
+
+.mapUpdate{
+    position: fixed;
+    background: white;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    z-index: 100;
+
+    background: rgba( 255, 255, 255, 0.7 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.mapUpdate b{
+    text-align: left;
+}
+
+
+.updateAddress{
+    position: fixed;
+    z-index: 99;
+    background: #ced4da;
+    width: 50px;
+    height: 50px;
+    bottom: 108px;
+    right: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+
+}
+
+.positinon{
+    z-index: 99;
+    position: relative;
+}
+
+.mapContinerblackback{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+}
+
+.noshow{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.wave{
+    width: 100%;
+    background: url(https://firebasestorage.googleapis.com/v0/b/instagram-react-75d47.appspot.com/o/wave3.png?alt=media&token=711ab296-dfd6-4677-aab0-91019f181350);
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    animation: filling 20s linear infinite;
+    padding: 25px 15px;
+}
+
+@keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+  }
+
+  .wave-inner{
+
+    margin: 0 auto;
+  }
+
+  
+  .wave-inner >*{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .wave-inner textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid #cfcfcf;
+}

@@ -1,0 +1,68 @@
+
+.UserProfile{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.profile__image{
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.profile__image img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.profileupload{
+    position: fixed;
+    background: white;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    z-index: 100;
+
+}
+
+.pforileblackback{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.noShow{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.profileupload>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.profilname{
+    padding: 0;
+    margin: 0;
+}
+

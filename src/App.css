@@ -1,0 +1,122 @@
+*,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+.app{
+  background-color: #f9f9f9;
+  height:100vh;
+  font-family: 'Nanum Gothic', sans-serif;
+
+
+}
+.app__header{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.app__headerImage{
+  object-fit: contain;
+  width: 100px;
+}
+.app__signup .modal-body{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app__signup .modal-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__loginContainer{
+  display: flex;
+gap: 10px;
+    align-items: center;
+}
+.btn.btn-login{
+  background: #e3e2e2;
+  height: fit-content;
+  padding: 3px 14px;
+}
+.btn.btn-sign{
+  background: #0074c9;
+  height: fit-content;
+  padding: 5px;
+  color: #fff;
+}
+.bottomNav{
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #f1f1f1;
+  z-index: 99;
+}
+
+.bottomNav>div{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomNav .profilname{
+  display: none;
+}
+
+.bottomNav .profile__image {
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.loginWarning{
+  position: fixed;
+    background: #fff;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.loginWarning>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 10px;
+}
